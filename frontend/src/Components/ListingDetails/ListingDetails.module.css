@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.detail_page_container {
+	font-family: "Poppins", sans-serif;
+	margin-top: 100px !important;
+	width: 80vw;
+	margin: auto auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 10%;
+	margin-bottom: 100px;
+}
+
+.image_container img {
+	object-fit: cover;
+	width: 600px;
+}
+
+.title {
+	margin-right: 20px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.agent_details_content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 90%;
+	align-items: center;
+}
+
+.agent_title {
+	font-size: 20px;
+}
+
+.contact_button {
+	background-color: rgb(255, 0, 0);
+	color: white;
+	border: none;
+	border-radius: 30px;
+	padding: 10px 20px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.property_details {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.property_details h1 {
+	margin: 0;
+	font-size: 4vw;
+}
+
+.error_message {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+@media only screen and (max-width: 1092px) {
+	.detail_page_container {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: flex-start;
+		gap: 2%;
+	}
+
+	.image_container img {
+		object-fit: cover;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.detail_page_container {
+		width: 87vw;
+		margin: auto auto;
+		margin-top: 50px !important;
+	}
+}
